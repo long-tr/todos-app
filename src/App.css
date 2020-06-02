@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f5f5f5
+}
+.TodoApp{
+  width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0 ,.1);
+  margin: 0 auto;
+}
+.TodoApp input{
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #f1f1f1;
+}
+.TodoApp input::placeholder{
+  color: #e4dddd
+}
+.TodoApp input:focus{
+  outline: none;
+}
+.TodoApp .List>div + div{
+  border-top: 1px solid #f1f1f1;
+}
+.TodoApp .List>div{
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+img{
+  cursor: pointer;
+}
+.check img{
+  width: 30px;
+  margin-right: 10px;
+}
+.del{
+  position: absolute;
+  top: 50%;
+  opacity: .3;
+  right: 20px;
+  transform: translateY(-50%)
+}
+.Footer{
+  padding: 0 20px;
+  border-top: 1px solid #f1f1f1;
+  color: #e4dddd;
+  display: flex;
+  align-items: center;
+}
+.Footer a{
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #f1f1f1;
+  text-decoration: none;
+  color: #999;
+  margin-left: 10px;
+  border-radius: 5px;
+}
